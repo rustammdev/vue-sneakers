@@ -1,8 +1,17 @@
 <script setup>
-import MyHello from "./components/MyHello.vue";
+import Header from "./components/header.vue";
+import CardList from "./components/cardList.vue";
+
 </script>
 
 <template>
-  <MyHello title="Pume" :sena="12500" :added="false" />
-  <MyHello title="Nike" :sena="1252100" :added="true" />
+  <div class="md:px-12 max-md:p-6 bg-white h-screen max:w-7xl m-auto">
+    <Header />
+    <div>
+      <CardList />
+    </div>
+    
+
+    <!-- Main container end -->
+  </div>
 </template>
